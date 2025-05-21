@@ -1,0 +1,2 @@
+/Users/bahri/development/AFC2/run/flutter_jago_pos_app/android/app/.cxx/Debug/4udoub6f/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/bahri/development/AFC2/run/flutter_jago_pos_app/android/app/.cxx/Debug/4udoub6f/arm64-v8a/CMakeFiles/rebuild_cache.dir

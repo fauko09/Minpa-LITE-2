@@ -1,0 +1,1 @@
+/Users/bahri/development/AFC2/run/flutter_jago_pos_app/build/app/intermediates/cxx/RelWithDebInfo/183p6870/obj/x86_64
