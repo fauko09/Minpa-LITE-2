@@ -2,6 +2,10 @@ import 'dart:io';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:minpa_lite/data/datasources/auth_local_datasource.dart';
+import 'package:minpa_lite/data/models/responses/user_model.dart';
+import 'package:minpa_lite/presentation/auth/splash/splash_page.dart';
+import 'package:minpa_lite/presentation/home/home_page.dart';
 // import 'package:firebase_core/firebase_core.dart';
 // import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -14,6 +18,19 @@ void main() async {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       debugShowMaterialGrid: false,
+      home: FutureBuilder<UserModel?>(
+          future: AuthLocalDatasource().getUserData(),
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              if (snapshot.data != null) {
+                return const HomePage();
+              } else {
+                return const SplashPage();
+              }
+            } else {
+              return const SplashPage();
+            }
+          }),
     ),
   );
 }
