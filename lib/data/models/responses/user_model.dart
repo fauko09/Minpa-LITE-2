@@ -7,6 +7,8 @@ class UserModel {
   final String phone;
   final String email;
   final String password;
+  final String bank;
+  final String account;
   final String role;
 
   UserModel({
@@ -16,6 +18,8 @@ class UserModel {
     required this.phone,
     required this.email,
     required this.password,
+    required this.bank,
+    required this.account,
     required this.role,
   });
 
@@ -27,6 +31,8 @@ class UserModel {
       phone: map['phone'],
       email: map['email'],
       password: map['password'],
+      bank: map['bank'],
+      account: map['account'],
       role: map['role'],
     );
   }
@@ -38,6 +44,8 @@ class UserModel {
       'phone': phone,
       'email': email,
       'password': password,
+      'bank': bank,
+      'account': account,
       'role': role,
     };
   }
@@ -50,6 +58,8 @@ class UserModel {
       'phone': phone,
       'email': email,
       'password': password,
+      'bank': bank,
+      'account': account,
       'role': role,
     };
   }
